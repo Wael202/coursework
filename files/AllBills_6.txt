@@ -1,0 +1,10 @@
+Order Bill
+Table 6
+Lentil Soup	3 *2.0 = 6.0
+Fish&Chips	3 *9.0 = 27.0
+Chocolate Cake	3 *3.0 = 9.0
+Cappuchino	3 *2.5 = 7.5
+	 	 	 =====
+Total for this table 	49.5
+Discount 	 	0.0
+Discounted Total 	49.5

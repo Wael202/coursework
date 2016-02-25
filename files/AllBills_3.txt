@@ -1,0 +1,9 @@
+Order Bill
+Table 3
+Grilled Fish	2 *10.0 = 20.0
+Chocolate Cake	2 *3.0 = 6.0
+Lentil Soup	2 *2.0 = 4.0
+	 	 	 =====
+Total for this table 	30.0
+Discount 	 	0.0
+Discounted Total 	30.0

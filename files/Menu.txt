@@ -1,0 +1,23 @@
+	 	 MENU
+====================
+Starter
+	Chicken Popcorn	3.5
+	Lentil Soup	2.0
+	Shrimps	10.0
+
+Main
+	Fish&Chips	9.0
+	Fried Chicken	6.5
+	Grilled Fish	10.0
+	Grilled Kebab	8.5
+	Hamburger	4.0
+
+Desert
+	Cake	10.0
+	Chocolate Cake	3.0
+	Ice Cream	2.0
+	Tea	2.0
+
+Drink
+	Cappuchino	2.5
+	Soft Drink	1.0

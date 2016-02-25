@@ -1,0 +1,78 @@
+Order Bill
+Table 1
+Hamburger	3 *4.0 = 12.0
+Fish&Chips	1 *9.0 = 9.0
+Cappuchino	4 *2.5 = 10.0
+Soft Drink	3 *1.0 = 3.0
+	 	 	 =====
+Total for this table 	34.0
+Discount 	 	0.0
+Discounted Total 	34.0
+
+Order Bill
+Table 2
+Hamburger	1 *4.0 = 4.0
+Fried Chicken	1 *6.5 = 6.5
+Grilled Fish	1 *10.0 = 10.0
+Ice Cream	1 *2.0 = 2.0
+Soft Drink	1 *1.0 = 1.0
+	 	 	 =====
+Total for this table 	23.5
+Discount 	 	0.0
+Discounted Total 	23.5
+
+Order Bill
+Table 3
+Grilled Fish	2 *10.0 = 20.0
+Chocolate Cake	2 *3.0 = 6.0
+Lentil Soup	2 *2.0 = 4.0
+	 	 	 =====
+Total for this table 	30.0
+Discount 	 	0.0
+Discounted Total 	30.0
+
+Order Bill
+Table 4
+Chocolate Cake	1 *3.0 = 3.0
+Fish&Chips	1 *9.0 = 9.0
+Chicken Popcorn	1 *3.5 = 3.5
+Lentil Soup	1 *2.0 = 2.0
+	 	 	 =====
+Total for this table 	17.5
+Discount 	 	0.0
+Discounted Total 	17.5
+
+Order Bill
+Table 5
+Grilled Kebab	2 *8.5 = 17.0
+Soft Drink	2 *1.0 = 2.0
+Chocolate Cake	2 *3.0 = 6.0
+Lentil Soup	2 *2.0 = 4.0
+	 	 	 =====
+Total for this table 	29.0
+Discount 	 	0.0
+Discounted Total 	29.0
+
+Order Bill
+Table 6
+Lentil Soup	3 *2.0 = 6.0
+Fish&Chips	3 *9.0 = 27.0
+Chocolate Cake	3 *3.0 = 9.0
+Cappuchino	3 *2.5 = 7.5
+	 	 	 =====
+Total for this table 	49.5
+Discount 	 	0.0
+Discounted Total 	49.5
+
+Order Bill
+Table 7
+Grilled Fish	2 *10.0 = 20.0
+Hamburger	1 *4.0 = 4.0
+Chicken Popcorn	3 *3.5 = 10.5
+Soft Drink	3 *1.0 = 3.0
+Ice Cream	2 *2.0 = 4.0
+	 	 	 =====
+Total for this table 	41.5
+Discount 	 	0.0
+Discounted Total 	41.5
+

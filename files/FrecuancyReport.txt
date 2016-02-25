@@ -1,0 +1,14 @@
+
+ FREQUENCY REPORT
+====================
+Ice Cream: 2
+Chicken Popcorn: 2
+Lentil Soup: 4
+Chocolate Cake: 4
+Grilled Kebab: 1
+Hamburger: 3
+Fried Chicken: 1
+Fish&Chips: 3
+Cappuchino: 2
+Grilled Fish: 3
+Soft Drink: 4
