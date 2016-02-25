@@ -1,0 +1,11 @@
+Order Bill
+Table 2
+Hamburger	1 *4.0 = 4.0
+Fried Chicken	1 *6.5 = 6.5
+Grilled Fish	1 *10.0 = 10.0
+Ice Cream	1 *2.0 = 2.0
+Soft Drink	1 *1.0 = 1.0
+	 	 	 =====
+Total for this table 	23.5
+Discount 	 	0.0
+Discounted Total 	-211.5

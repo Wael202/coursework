@@ -19,7 +19,7 @@ public class OrderManager {
 	public static TreeSet<Order> orderSet = new TreeSet<>();
 	public static TreeSet<Menu> menuSet = new TreeSet<>();
 
-	public static void main(String arg[]) {
+	public static void main(String arg[])  {
 
 		Utilities Utility = new Utilities();
 		// OrdersAnalysis is can Class contains method for Analyzing the orders and reports
@@ -86,6 +86,7 @@ public class OrderManager {
 					System.out.println("Enter Table ID : ");
 					tbID = in.next();
 					tbIDexists= ts.contains(tbID);
+					
 					if (tbIDexists) {
 						System.out.println("Does this Table has discount?(y/n) : ");
 						hasDiscount = in.next();
@@ -101,6 +102,7 @@ public class OrderManager {
 						String TableBilNumber = "TableBillNumber" + oc.getTableNum() + ".txt";
 						Utility.WriteOrderBillToTextFile("files/" + TableBilNumber, oc);
 					} else
+						//throw new TableNumException(tbID);
 						System.out.println("The Table ID : " + tbID + " NOT exist in the orders list, Enter valid table ID " + ts.toString());	
 			} while (!tbIDexists);
 				break;
@@ -132,9 +134,31 @@ public class OrderManager {
 				System.out.println("Invalid selection");
 			}
 
+			String message = "";
+			try {
 			System.out.println("Do you want to continue? (y/n)");
 			response = in.next();
+			response=getResponse(response);
+			}
+			catch (SelectionException e) {
+				message = e.getMessage() + "\nNot valid entery please y or n"; 
+				System.out.println(message);
+				System.out.println("Do you want to continue? (y/n)");
+				response = in.next();
+			}
+		
 		} while (response.equalsIgnoreCase("y"));
 
 	}
+
+	public static String getResponse(String res) throws SelectionException {
+    	
+    	if ( (res.equalsIgnoreCase("y")) || (res.equalsIgnoreCase("n")) ) {
+    		return res;
+    	}
+    	else
+    		throw new SelectionException(res);
+    }
+
+
 }
