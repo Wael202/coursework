@@ -38,6 +38,7 @@ public class Utilities {
 				try {
 					tree.add(order);
 					TableNumList.add(data[0]);
+					orderList.add( data[1].trim());
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 
@@ -50,7 +51,7 @@ public class Utilities {
 		} // end try
 
 		catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
+			System.out.println("The file does exist");
 			return null;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -94,7 +95,7 @@ public class Utilities {
 			} // end while
 			return menuTree;
 		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
+			System.out.println("The file does exist");
 			return null;
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
@@ -208,9 +209,9 @@ public class Utilities {
 		BufferedWriter writer = null;
 		try {
 			writer = new BufferedWriter(new FileWriter(fileName));
-			writer.write("\t \t MENU");
+			writer.write("\t MENU");
 			writer.newLine();
-			writer.write("====================");
+			writer.write("======================================");
 			writer.newLine();
 
 			// ---------------------------------
@@ -318,13 +319,14 @@ public class Utilities {
 
 		// Check empty or not
 		if (orderSet.isEmpty()) {
-			System.out.print("order Set is  empty.");
+			System.out.print("There is no orders");
 		} else {
-			System.out.println("order Set (TreeSet) size: " + orderSet.size());
+			System.out.println("The order list contains : " + orderSet.size() +" orders");
 		}
-		System.out.println("order Set (TreeSet) data: ");
+		System.out.println("The Orders List: ");
+		System.out.println("Table ID \t  Dish Name \t Quantity");
 		for (Order o : orderSet) {
-			System.out.println(o.getId() + " " + o.getName());
+			System.out.println(o.getId() + "\t" + o.getName() + "\t"+ o.getQuantity());
 			orderList.add(o.getName());
 		}
 
@@ -351,7 +353,7 @@ public class Utilities {
 				writer.write(temp + ": " + Collections.frequency(orderList, temp));
 				writer.newLine();
 			}
-			System.out.println("FREQUENCY REPOR written Successfully");
+			System.out.println("FREQUENCY REPORT written Successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -380,6 +382,8 @@ public class Utilities {
 				list = oc.getOrderList();
 				double itemprice = 0;
 				writer.write("Order Bill");
+				writer.newLine();
+				writer.write("----------");
 				writer.newLine();
 				writer.write("Table " + oc.getTableNum());
 				writer.newLine();

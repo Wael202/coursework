@@ -1,0 +1,10 @@
+Order Bill
+Table 4
+Chocolate Cake	1 *3.0 = 3.0
+Fish&Chips	1 *9.0 = 9.0
+Chicken Popcorn	1 *3.5 = 3.5
+Lentil Soup	1 *2.0 = 2.0
+	 	 	 =====
+Total for this table 	17.5
+Discount 	 	0.0
+Discounted Total 	17.5

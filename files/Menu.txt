@@ -1,5 +1,5 @@
-	 	 MENU
-====================
+	 MENU
+======================================
 Starter
 	Chicken Popcorn	3.5
 	Lentil Soup	2.0

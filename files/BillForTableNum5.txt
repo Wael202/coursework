@@ -1,0 +1,10 @@
+Order Bill
+Table 5
+Grilled Kebab	2 *8.5 = 17.0
+Soft Drink	2 *1.0 = 2.0
+Chocolate Cake	2 *3.0 = 6.0
+Lentil Soup	2 *2.0 = 4.0
+	 	 	 =====
+Total for this table 	29.0
+Discount 	 	0.0
+Discounted Total 	29.0
