@@ -12,7 +12,7 @@ public class OrdersAnalysis {
 	double Price;
 	double OrderTotal = 0;
 	double DiscountedTotal = 0;
-
+	double discountRate=0;;
 	public OrderCollection getTableBill(TreeSet<Order> orderTreeSet, TreeSet<Menu> menuTreeSet, String tableNum,
 			double discount) {
 		if ((orderTreeSet != null) && (menuTreeSet != null)) {
@@ -38,14 +38,17 @@ public class OrdersAnalysis {
 				OrderTotal += op.getItemPrice() * op.getQuantity();
 			}
 			if (discount != 0) {
-				DiscountedTotal = OrderTotal - (OrderTotal * discount);
+				discountRate=(OrderTotal * discount)/100;
+				DiscountedTotal = OrderTotal - discountRate;
 			} else {
+				discountRate=0;
 				DiscountedTotal = OrderTotal;
 			}
 			orderCollection.setOrderColectionId(OrderColID++);
 			orderCollection.setOrderList(ol);
 			orderCollection.setTableNum(tableNum);
 			orderCollection.setTotalBill(OrderTotal);
+			orderCollection.setDiscount(discountRate);
 			orderCollection.setDiscountedTotal(DiscountedTotal);
 
 		}
@@ -92,6 +95,7 @@ public class OrdersAnalysis {
 				double price = 0;
 				double ordertotal = 0;
 				double discountedtotal = 0;
+				double discountrate=0;;
 				ArrayList<OderPrice> ol = new ArrayList<>();
 				OrderCollection orderCol = new OrderCollection();
 				for (Order o : orderTreeSet) {
@@ -116,14 +120,17 @@ public class OrdersAnalysis {
 					ordertotal += op.getItemPrice() * op.getQuantity();
 				}
 				if (discount != 0) {
-					discountedtotal = ordertotal - (ordertotal * discount);
+					discountrate=(ordertotal * discount)/100;
+					discountedtotal = ordertotal -discountrate;
 				} else {
+					discountrate=0;
 					discountedtotal = ordertotal;
 				}
 				orderCol.setOrderColectionId(orderColId++);
 				orderCol.setOrderList(ol);
 				orderCol.setTableNum(tbNumber);
 				orderCol.setTotalBill(ordertotal);
+				orderCol.setDiscount(discountrate);
 				orderCol.setDiscountedTotal(discountedtotal);
 				ocList.add(orderCol);
 

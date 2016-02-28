@@ -145,7 +145,7 @@ public class Utilities {
 			emotryStr = "Discounted Total ";
 			writer.write(emotryStr + "\t" + oc.getDiscountedTotal());
 			writer.newLine();
-			System.out.println("File written Successfully");
+			System.out.println("TableBillNumber.txt File written Successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -162,16 +162,21 @@ public class Utilities {
 		BufferedWriter writer = null;
 		try {
 			writer = new BufferedWriter(new FileWriter(fileName));
+			System.out.println("DISHES NOT ORDERED");
 			writer.write("DISHES NOT ORDERED");
 			writer.newLine();
 			writer.write("====================");
+			System.out.println("===================");
 			writer.newLine();
 
 			for (int i = 0; i < dishesList.size(); i++) {
 				writer.write(dishesList.get(i));
 				writer.newLine();
+				System.out.println(dishesList.get(i));
 			}
-			System.out.println("File written Successfully");
+			System.out.println("===================");
+			System.out.println("");
+			System.out.println("DishesNotOrdered.txt File written Successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -211,7 +216,7 @@ public class Utilities {
 			writer = new BufferedWriter(new FileWriter(fileName));
 			writer.write("\t MENU");
 			writer.newLine();
-			writer.write("======================================");
+			writer.write("===========================");
 			writer.newLine();
 
 			// ---------------------------------
@@ -302,7 +307,7 @@ public class Utilities {
 						writer.newLine();
 					}
 			}
-			System.out.println("Menu File written Successfully");
+			System.out.println("Menu.txt File written Successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -353,7 +358,7 @@ public class Utilities {
 				writer.write(temp + ": " + Collections.frequency(orderList, temp));
 				writer.newLine();
 			}
-			System.out.println("FREQUENCY REPORT written Successfully");
+			System.out.println("FrecuancyReport.txt File written Successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

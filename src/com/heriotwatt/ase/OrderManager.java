@@ -20,7 +20,7 @@ public class OrderManager {
 	public static TreeSet<Menu> menuSet = new TreeSet<>();
 
 	public static void main(String arg[])  {
-
+		//Utilities is a Class contains all operational methods such as read and write files
 		Utilities Utility = new Utilities();
 		// OrdersAnalysis is can Class contains method for Analyzing the orders and reports
 		OrdersAnalysis analysis = new OrdersAnalysis();
@@ -102,7 +102,6 @@ public class OrderManager {
 						String TableBilNumber = "TableBillNumber" + oc.getTableNum() + ".txt";
 						Utility.WriteOrderBillToTextFile("files/" + TableBilNumber, oc);
 					} else
-						//throw new TableNumException(tbID);
 						System.out.println("The Table ID : " + tbID + " NOT exist in the orders list, Enter valid table ID " + ts.toString());	
 			} while (!tbIDexists);
 				break;
@@ -141,7 +140,7 @@ public class OrderManager {
 			response=getResponse(response);
 			}
 			catch (SelectionException e) {
-				message = e.getMessage() + "\nNot valid entery please y or n"; 
+				message = e.getMessage() + "\nNot valid entery please enter y or n"; 
 				System.out.println(message);
 				System.out.println("Do you want to continue? (y/n)");
 				response = in.next();
