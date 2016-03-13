@@ -8,4 +8,4 @@ Soft Drink	1 *1.0 = 1.0
 	 	 	 =====
 Total for this table 	23.5
 Discount 	 	0.0
-Discounted Total 	-211.5
+Discounted Total 	23.5
