@@ -1,56 +1,34 @@
 package com.heriotwatt.ase;
 
+import java.util.ArrayList;
 
-
-public class OrderDelivery implements Observer{
-	private int Id;
-	private int OrderId;
-	private String TableNum;
-	private String DishName;
-	private int Quantity;
-	private String OrderStatus;
+public class OrderDelivery {
+	private int OrderDeliveryId;
+	private ArrayList<Order> OrderList;
+	private String OrderTableStatus;
 	private String Water;
+	private String orderListString;
 	
-	public OrderDelivery(int id, int orderId, String tableNum, String dishName, int quantity, String orderStatus,
-			String water) {
 
-		Id = id;
-		OrderId = orderId;
-		TableNum = tableNum;
-		DishName = dishName;
-		Quantity = quantity;
-		OrderStatus = orderStatus;
+	public OrderDelivery(int id,ArrayList<Order> orderlist,String orderstatus,String water) {
+
+		OrderDeliveryId = id;
+		OrderList=new ArrayList<Order>();
+		OrderTableStatus = orderstatus;
 		Water = water;
+		
 	}
-	public int getId() {
-		return Id;
+	public String getOrderListString() {
+		return orderListString;
 	}
-	public void setId(int id) {
-		Id = id;
+	public void setOrderListString(String orderListString) {
+		this.orderListString = orderListString;
 	}
-	public int getOrderId() {
-		return OrderId;
+	public int getOrderDeliveryId() {
+		return OrderDeliveryId;
 	}
-	public void setOrderId(int orderId) {
-		OrderId = orderId;
-	}
-	public String getDishName() {
-		return DishName;
-	}
-	public void setDishName(String dishName) {
-		DishName = dishName;
-	}
-	public int getQuantity() {
-		return Quantity;
-	}
-	public void setQuantity(int quantity) {
-		Quantity = quantity;
-	}
-	public String getOrderStatus() {
-		return OrderStatus;
-	}
-	public void setOrderStatus(String orderStatus) {
-		OrderStatus = orderStatus;
+	public void setOrderDeliveryId(int _OrderDeliveryId) {
+		OrderDeliveryId = _OrderDeliveryId;
 	}
 	public String getWater() {
 		return Water;
@@ -58,12 +36,28 @@ public class OrderDelivery implements Observer{
 	public void setWater(String water) {
 		Water = water;
 	}
-	
-	public void update(String orderStaus,String WaterName) {
-		// TODO Auto-generated method stub
-		
+	public ArrayList<Order> getOrderList() {
+		return OrderList;
 	}
+	public void setOrderList(ArrayList<Order> orderList) {
+		OrderList = orderList;
+	}
+	public String getOrderTableStatus() {
+		return OrderTableStatus;
+	}
+	public void setOrderTableStatus(String orderTableStatus) {
+		OrderTableStatus = orderTableStatus;
+	}
+
+/*public String getOrderListString1(ArrayList<Order> ol){
+	StringBuffer allEntries = new StringBuffer();
+    for(Order o : ol) {
+        allEntries.append(o.getId() +"  " + o.getName() + " *  "+ o.getQuantity());
+        allEntries.append('\n');
+
+    }
+    return allEntries.toString();
 	
-
-
+}
+*/
 }
